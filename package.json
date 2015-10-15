@@ -11,7 +11,7 @@
   "directories": {
     "lib": "./lib"
   },
-  "main": "./lib",
+  "main": "./lib/adapter.js",
   "dependencies": {
     "graphql": "^0.4.7",
     "lodash": "^3.10.1",
@@ -33,10 +33,18 @@
       "node",
       "mocha"
     ],
+    "globals": [
+      "strapi",
+      "angular",
+      "$",
+      "_"
+    ],
     "ignores": [
+      "bin/_spawn.js",
       "node_modules/**",
       "bower_components/**",
-      "coverage/**"
+      "coverage/**",
+      "test/**"
     ],
     "rules": {
       "babel/object-shorthand": 0,
@@ -54,6 +62,12 @@
       "no-implicit-coercion": 0,
       "no-invalid-this": 0,
       "no-throw-literal": 0,
+      "no-trailing-spaces": [
+        2,
+        {
+          "skipBlankLines": true
+        }
+      ],
       "no-unused-expressions": 0,
       "padded-blocks": 0,
       "prefer-arrow-callback": 0,
