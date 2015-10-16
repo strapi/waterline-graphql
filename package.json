@@ -13,7 +13,6 @@
   },
   "main": "./lib/adapter.js",
   "dependencies": {
-    "graphql": "^0.4.7",
     "lodash": "^3.10.1",
     "waterline": "^0.10.26"
   },
