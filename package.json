@@ -11,11 +11,9 @@
   "directories": {
     "lib": "./lib"
   },
-  "main": "./lib",
+  "main": "./lib/adapter.js",
   "dependencies": {
-    "graphql": "^0.4.7",
-    "lodash": "^3.10.1",
-    "waterline": "^0.10.26"
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "babel": "^5.0.0",
@@ -26,6 +24,10 @@
     "mocha": "^2.3.3",
     "xo": "^0.9.0"
   },
+  "peerDependencies": {
+    "graphql": ">=0.4.2",
+    "waterline": ">=0.10.26"
+  },
   "xo": {
     "space": true,
     "esnext": true,
@@ -33,10 +35,18 @@
       "node",
       "mocha"
     ],
+    "globals": [
+      "strapi",
+      "angular",
+      "$",
+      "_"
+    ],
     "ignores": [
+      "bin/_spawn.js",
       "node_modules/**",
       "bower_components/**",
-      "coverage/**"
+      "coverage/**",
+      "test/**"
     ],
     "rules": {
       "babel/object-shorthand": 0,
@@ -54,6 +64,12 @@
       "no-implicit-coercion": 0,
       "no-invalid-this": 0,
       "no-throw-literal": 0,
+      "no-trailing-spaces": [
+        2,
+        {
+          "skipBlankLines": true
+        }
+      ],
       "no-unused-expressions": 0,
       "padded-blocks": 0,
       "prefer-arrow-callback": 0,
