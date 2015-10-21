@@ -83,7 +83,7 @@ This example will return the five latest subscribers between the September 27th
 and the September 28th 2015.
 ​
 ```javascript
-let query = 'getLatestUsers(count: 5, start: "9/27/2015", end: "9/28/2015")';
+let query = '{ getLatestUsers(count: 5, start: "9/27/2015", end: "9/28/2015") }';
 ```
 ​
 ### getFirstModel (count: Int!, start: Date, end: Date)
@@ -91,7 +91,7 @@ let query = 'getLatestUsers(count: 5, start: "9/27/2015", end: "9/28/2015")';
 This example will return the five first articles from the September 27th 2015.
 ​
 ```javascript
-let query = 'getFirstArticles(count: 5, start: "9/27/2015")';
+let query = '{ getFirstArticles(count: 5, start: "9/27/2015") }';
 ```
 ​
 ### countModel (start: Date, end: Date)
@@ -99,5 +99,5 @@ let query = 'getFirstArticles(count: 5, start: "9/27/2015")';
 This example will return the number of subscribers the September 28th 2015.
 ​
 ```javascript
-let query = 'countUsers(start: "9/28/2015", end: "9/28/2015")';
+let query = '{ countUsers(start: "9/28/2015", end: "9/28/2015") }';
 ```
