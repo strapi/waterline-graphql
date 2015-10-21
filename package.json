@@ -36,15 +36,10 @@
       "mocha"
     ],
     "globals": [
-      "strapi",
-      "angular",
-      "$",
       "_"
     ],
     "ignores": [
-      "bin/_spawn.js",
       "node_modules/**",
-      "bower_components/**",
       "coverage/**",
       "test/**"
     ],
