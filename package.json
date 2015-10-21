@@ -1,6 +1,6 @@
 {
   "name": "waterline-graphql",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "GraphQL adapter for the Waterline ORM.",
   "keywords": [
     "adapter",
@@ -36,15 +36,10 @@
       "mocha"
     ],
     "globals": [
-      "strapi",
-      "angular",
-      "$",
       "_"
     ],
     "ignores": [
-      "bin/_spawn.js",
       "node_modules/**",
-      "bower_components/**",
       "coverage/**",
       "test/**"
     ],
