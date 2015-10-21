@@ -1,6 +1,6 @@
 {
   "name": "waterline-graphql",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "GraphQL adapter for the Waterline ORM.",
   "keywords": [
     "adapter",
