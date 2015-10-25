@@ -1,5 +1,7 @@
 # GraphQL adapter for Waterline
 
+Inspired by [waterline-to-graphql adapter](https://github.com/agenthunt/waterline-to-graphql)
+
 ## Installation
 
 Install the latest stable release with the npm command-line tool:
