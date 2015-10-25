@@ -11,9 +11,13 @@
   "directories": {
     "lib": "./lib"
   },
-  "main": "./lib/adapter.js",
+  "main": "lib/adapter.js",
+  "scripts": {
+    "test": "xo",
+    "prepublish": "npm prune"
+  },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1"    
   },
   "devDependencies": {
     "babel": "^5.0.0",
@@ -72,10 +76,6 @@
       "prefer-template": 0,
       "strict": 0
     }
-  },
-  "scripts": {
-    "test": "xo",
-    "prepublish": "npm prune"
   },
   "author": {
     "email": "hack@wistity.co",
