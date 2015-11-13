@@ -19,9 +19,11 @@ $ npm install waterline-graphql
 const WaterlineGraphQL = require('waterline-graphql');
 
 // Convert Waterline collections to GraphQL schemas
-const schemas = WaterlineGraphQL.getGraphQLSchema({
+WaterlineGraphQL.getGraphQLSchema({
   collections: strapi.orm.collections,
   usefulFunctions: true
+}, function (schemas) {
+  // Use your schemas here...
 });
 ```
 
