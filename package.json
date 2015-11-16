@@ -1,6 +1,6 @@
 {
   "name": "waterline-graphql",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "GraphQL adapter for the Waterline ORM.",
   "keywords": [
     "adapter",
@@ -17,7 +17,7 @@
     "prepublish": "npm prune"
   },
   "dependencies": {
-    "lodash": "^3.10.1"    
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "xo": "^0.11.0"
