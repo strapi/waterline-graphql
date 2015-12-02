@@ -17,10 +17,10 @@
     "prepublish": "npm prune"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "~3.10.1"
   },
   "devDependencies": {
-    "xo": "^0.11.0"
+    "xo": "~0.11.0"
   },
   "peerDependencies": {
     "graphql": ">=0.4.2",
